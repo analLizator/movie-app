@@ -45,8 +45,16 @@ setMovies(movies.filter((movie) => movie.id !== id));
 .catch((err) => console.error('Грешка при изтриване:', err));
 };
 return (
-<div className="container mt-5" style={{ maxWidth: '600px' }}>
-<h1 className="text-center mb-4">🎬 Моят Филмов Списък</h1>
+<div className="container mt-5" style={{ maxWidth: '600px', 
+                                         border: 'none',
+                                         boxShadow: 'none',
+                                         background: 'transparent', }}>
+
+
+<h1 className="text-center mb-4" style = {{ backgroundColor: 'transparent',
+                                            color: 'black',
+                                            padding: '10px 20px',
+                                            borderRadius: '5px',}}>🎬 Моят Филмов Списък</h1>
 <div className="card p-4 mb-4 shadow-sm">
 <form onSubmit={handleSubmit} className="row g-2">
 <div className="col-md-5">
